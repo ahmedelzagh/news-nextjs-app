@@ -1,0 +1,18 @@
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0.4em;
+}
+
+.form button {
+  margin: auto;
+  font-size: var(--fs-p);
+}
+
+@media (min-width: 48em) {
+  .form {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0em;
+  }
+}
