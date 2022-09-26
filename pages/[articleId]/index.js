@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   client.close();
 
   return {
-    fallback: true,
+    fallback: 'blocking',
     paths: news.map((article) => ({
       params: {
         articleId: article._id.toString(),
