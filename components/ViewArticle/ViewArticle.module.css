@@ -1,0 +1,11 @@
+.viewArticle h1 {
+  text-align: center;
+}
+.viewArticle p {
+  line-height: 5rem;
+}
+.viewArticle span {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-sm);
+}

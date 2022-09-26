@@ -8,10 +8,10 @@ const ArticleDetails = (props) => {
 export async function getStaticPaths() {
   const client = await MongoClient.connect("mongodb+srv://ahmed:BGuiep8nyWJPOz6H@cluster0.5sx13xz.mongodb.net/news-app?retryWrites=true&w=majority");
   const db = client.db();
-
   const newsCollection = db.collection("news");
   const news = await newsCollection.find({}, { _id: 1 }).toArray();
   client.close();
+
   return {
     fallback: false,
     paths: news.map((article) => ({
@@ -27,7 +27,6 @@ export async function getStaticProps(context) {
 
   const client = await MongoClient.connect("mongodb+srv://ahmed:BGuiep8nyWJPOz6H@cluster0.5sx13xz.mongodb.net/news-app?retryWrites=true&w=majority");
   const db = client.db();
-
   const newsCollection = db.collection("news");
   const selectedArticle = await newsCollection.findOne({ _id: ObjectId(articleId) });
   client.close();
