@@ -13,7 +13,6 @@ const NewArticle = () => {
       },
     });
     const data = await res.json();
-    console.log(data);
     router.push("/");
   };
   return (
