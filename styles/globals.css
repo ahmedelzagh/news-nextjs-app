@@ -45,12 +45,6 @@
   }
 }
 
-.App {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-
 body {
   margin: 0;
   font-size: var(--fs-400);

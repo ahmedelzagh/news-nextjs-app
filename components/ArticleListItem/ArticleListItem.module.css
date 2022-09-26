@@ -1,0 +1,22 @@
+.articleListItem {
+  filter: drop-shadow(0rem 1rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.articleListItem h1 {
+  text-align: center;
+}
+
+.articleListItem p {
+  max-width: 70rem;
+  line-height: 3.5rem;
+}
+.articleListItem span {
+  margin-bottom: 2rem;
+  font-size: var(--fs-sm);
+}
+
+.articleListItem button {
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
