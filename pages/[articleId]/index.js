@@ -37,9 +37,10 @@ export async function getStaticProps(context) {
         id: selectedArticle._id.toString(),
         title: selectedArticle.title,
         date: selectedArticle.date,
-        content: selectedArticle.content
+        content: selectedArticle.content,
       },
     },
+    revalidate: 1,
   };
 }
 
